@@ -2,7 +2,8 @@
 const url = "wss://stream.data.alpaca.markets/v1beta1/crypto";
 const socket = new WebSocket(url);
 
-const auth = {"action": "auth", "key": "yourkey", "secret": "yoursecret"}
+const auth = {"action": "auth", "key": "yourapikey", "secret": "yourapisecret"}
+
 const subscribe = {"action":"subscribe", "trades":["ETHUSD"], "quotes":["ETHUSD"], "bars":["ETHUSD"]}
 
 const quotesElement = document.getElementById('quotes');
