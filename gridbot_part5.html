@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>gridbot demo</title>
+        <style>
+            body { background: black; color: lightgreen; font-family: courier; }
+            .panel { width: 400px; height: 240px; margin-left: 30px; font-size: 20px; padding: 20px; border: solid lightgreen 1px; }
+            h1 { padding-left: 20px; }
+            #left { width: 500px; padding: 5px; margin-left: 20px; }
+            #middle { float: right; }
+            #right { float: right; }
+            #container { width: 1480px; }
+            .sell { color: red; }
+            .buy { color: lightgreen; }
+        </style>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="right">
+                <h1>open orders</h1>
+                <div id="open_orders" class="panel"></div>
+                <h1>closed orders</h1>
+                <div id="closed_orders" class="panel"></div>
+            </div>
+
+            <div id="middle">
+                <h1>quotes</h1>
+                <div id="quotes" class="panel"></div>
+                <h1>trades</h1>
+                <div id="trades" class="panel"></div>
+            </div>
+    
+            <div id="left">
+                <h1>ethereum</h1>
+                <div id="chart"></div>
+            </div>
+        </div>
+
+        <script src="gridbot_part5.js"></script>
+    </body>
+</html>
